@@ -12,7 +12,7 @@ TEX_FILE	:=	$(BASEFILE).tex
 BIB_FILE	:=	$(BASEFILE).bib
 TMP_FILE	:=	$(BASEFILE)-print.tex
 PDF_FILE	:=	$(BASEFILE).pdf
-ZIP_FILE	:=	yipengsun-$(BASEFILE).zip
+ZIP_FILE	:=	$(BASEFILE).zip
 VCS_FILE	:=	.$(UPDT_VCS)
 GEN_FILE	:=	*.swp *.bak *.out *.bbl *.blg *.log *.aux *.bcf *.xml *.snm *.toc *.vrb *.nav
 
@@ -45,12 +45,6 @@ endef
 pdf:
 	$(call compileTeX, $(TEX_FILE), $(ONLI_TEX))
 
-pdf-print:
-	@cp -u $(TEX_FILE) $(TMP_FILE)
-	@sed -i 's/ColorPDF//' $(TMP_FILE)
-	$(call compileTeX ,$(TMP_FILE), $(PRIN_TEX))
-	@find . -name '$(TMP_FILE)' | xargs rm -rf
-
 view:
 	$(VIEW_PDF) $(PDF_FILE)
 
@@ -65,4 +59,4 @@ pack: clean
 	@echo "Packing all files into a zip bundle..."
 	@apack $(ZIP_FILE) ./
 
-all: pdf pdf-print pack
+all: pdf pack
