@@ -50,7 +50,6 @@ view:
 
 clean:
 	@echo "Cleaning generated files during compilation..."
-	@echo "$(TMP_FILE)" | sed -e 's/-print-print/-print/' | xargs rm -rf
 	@for tmp in $(GEN_FILE); do				\
 		find . -name $$tmp | xargs rm -rf;	\
 	done
