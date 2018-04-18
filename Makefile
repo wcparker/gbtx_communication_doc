@@ -1,8 +1,7 @@
 # Set default programs for compiling, viewing, and archiving
 VIEW_PDF	:=	zathura
 PACK_ZIP	:=	apack
-ONLI_TEX	:=	lualatex
-PRIN_TEX	:=	lualatex
+TEX_COMP	:=	xelatex
 MAKE_BIB	:=	biber
 UPDT_VCS	:=	git
 
@@ -43,7 +42,7 @@ define compileTeX
 endef
 
 pdf:
-	$(call compileTeX, $(TEX_FILE), $(ONLI_TEX))
+	$(call compileTeX, $(TEX_FILE), $(TEX_COMP))
 
 view:
 	$(VIEW_PDF) $(PDF_FILE)
