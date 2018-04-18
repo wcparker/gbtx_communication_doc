@@ -8,9 +8,9 @@
 \usepackage[T1]{fontenc}
 
 \usepackage{graphicx}
-
-\usepackage{etoolbox}
-\AtBeginEnvironment{leftbar}{\sffamily\small}
+\usepackage{framed}
+\usepackage{tikz}
+\usepackage{caption}
 
 \def\itwoc{I{$\scriptstyle^2$}C\ }
 
@@ -25,7 +25,7 @@
 
 \section{Hardware setup}
 \input{include/hardware/overview.tex}
-
+\input{include/hardware/configure_gbtx_to_use_external_i2c.tex}
 
 \section{Software setup}
 
