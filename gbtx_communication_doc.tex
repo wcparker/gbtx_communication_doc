@@ -2,6 +2,7 @@
 
 \usepackage{gitinfo2}
 \usepackage{hyperref}
+\usepackage{amsmath,mathtools}
 \usepackage{cleveref}
 
 \usepackage{microtype}
@@ -15,6 +16,8 @@
 
 
 \def\itwoc{I{$\scriptstyle^2$}C\ }
+\newcommand\symbolwithin[2]{%
+    {\mathmakebox[\widthof{\ensuremath{{}#2{}}}][c]{{#1}}}}
 
 \title{GBTx Communication Document}
 \author{University of Maryland LHCb group}
@@ -43,5 +46,6 @@
 \addcontentsline{toc}{section}{Appendices}
 \renewcommand{\thesubsection}{\Alph{subsection}}
 \input{include/appendices/fix_gbt_server_error.tex}
+\input{include/appendices/bypass_components_in_gbt_data_path.tex}
 
 \end{document}
