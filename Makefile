@@ -37,8 +37,8 @@ endif
 define compileTeX
 	$(call vcsExists)
 	$(call bibExists, $(1), $(2))
-	@$(2) --shell-escape $(1);
-	@$(2) --shell-escape $(1);
+	@$(2) -shell-escape $(1);
+	@$(2) -shell-escape $(1);
 endef
 
 pdf:
