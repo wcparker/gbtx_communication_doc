@@ -13,7 +13,7 @@ TMP_FILE	:=	$(BASEFILE)-print.tex
 PDF_FILE	:=	$(BASEFILE).pdf
 ZIP_FILE	:=	$(BASEFILE).zip
 VCS_FILE	:=	.$(UPDT_VCS)
-GEN_FILE	:=	*.swp *.bak *.out *.bbl *.blg *.log *.aux *.bcf *.xml *.snm *.toc *.vrb *.nav
+GEN_FILE	:=	*.swp *.bak *.out *.bbl *.blg *.log *.aux *.bcf *.xml *.snm *.toc *.vrb *.nav _minted*
 
 # If version control exists, run corresponding command to generate info.
 ifeq ($(wildcard $(VCS_FILE)),)
@@ -37,8 +37,8 @@ endif
 define compileTeX
 	$(call vcsExists)
 	$(call bibExists, $(1), $(2))
-	@$(2) $(1);
-	@$(2) $(1);
+	@$(2) --shell-escape $(1);
+	@$(2) --shell-escape $(1);
 endef
 
 pdf:
