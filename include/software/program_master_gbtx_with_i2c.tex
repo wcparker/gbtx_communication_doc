@@ -3,7 +3,8 @@ Before proceed, follow the instruction on \autoref{sec:hardware-ext-i2c} to
 configure the hardware first.
 As said in the previous section, the master GBTx board must be programmed via an
 external \itwoc adapter first.
-A Windows 7 computer on the rack is used. The GBTx programmer is located at:
+A Windows 7 computer on the rack is used. The \textbf{GBTX programmer} is
+located at:
 
 \begin{minted}[frame=single]{powershell}
 DT_Rack\GBTx_programmer\GBTxProgrammer.jar
@@ -18,16 +19,16 @@ DT_Rack\GBTx_programmer\GBTxProgrammer.jar
 
 Launch the programmer, a typical UI is shown in
 \autoref{fig:gbtx-programmer-ui},
-Click ``Load GBTX configuration'' and load a configuration file.
-The configuration file is located at:
+Click \textbf{Load GBTX configuration} and load a configuration file, which is
+located at:
 
 \begin{minted}[frame=single]{powershell}
 DT_Rack\GBTx_programmer\GBTx_TRx_v12_test_withWatchDog.txt
 \end{minted}
 
-Then click ``Write ALL to the GBTX''. Check the returned message to make sure
-everything works (supposedly).
-Now click ``Read state''.
+Then click \textbf{Write ALL to the GBTX}. Check the returned message to make
+sure everything works (supposedly).
+Now click \textbf{Read state}.
 If the master GBTx is configured correctly and is connected to a working
 MiniDAQ, the return value should be:
 
