@@ -32,6 +32,11 @@ The result should be the same as shown in \autoref{fig:prbs-test1}.
     random data that the checkers are expecting.
 \end{leftbar}
 
+After replacing the loaned MiniDAQ board with our original board, we no longer
+can reproduce the exact behavior:
+All loopback channels go green, instead of error out.
+We deem it acceptable, at least for the time being.
+
 \paragraph{Test 2.} Follow the following steps:
 \begin{enumerate}
     \item Configure the GBTx slave to send PRBS data. Write ``00171717'' to
