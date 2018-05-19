@@ -1,12 +1,22 @@
 \subsection{Program slave GBTx with configuration files}
-The setup is exactly the same as shown in
-\autoref{sec:software-slave-individual}.
-All we need to change are replace the \textbf{Size} field with ``0'', and
-provide the configuration file location with the following syntax, which needs
-to be filled in the \textbf{Data in} field:
+Configure the parameter as shown in \autoref{fig:gbt-file}.
 
+\begin{figure}[ht]
+	\centering
+    \includegraphics[width=0.9\textwidth]{res/gbt_client_slave_program_via_config_file.png}
+	\caption{Parameters to program slave GBTx with a configuration file.}
+	\label{fig:gbt-file}
+\end{figure}
+
+The configuration file should be supplied to the \textbf{Data in} field with the
+following syntax:
 \begin{minted}[frame=single]{powershell}
 file:<path_to_configuration_file>
+\end{minted}
+
+The actual configuration file is located at:
+\begin{minted}[frame=single]{powershell}
+/home/admin/Public/slave.txt
 \end{minted}
 
 \begin{leftbar}
