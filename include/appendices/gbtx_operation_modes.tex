@@ -1,0 +1,23 @@
+\subsection{GBTx operation modes} \label{appx:4bit}
+\begin{figure}[ht]
+    \centering
+    \begin{tabular}{ccc}
+        \toprule
+        Enconding/Bus mode & Transceiver mode & MODE [3:0] \\
+        \midrule
+        FEC & Simplex TX  & 0000 \\
+        FEC & Simplex RX  & 0001 \\
+        FEC & Transceiver & 0010 \\
+        FEC & Test        & 0100 \\
+        WideBus & Simplex TX  & 0100 \\
+        WideBus & Simplex RX  & 0101 \\
+        WideBus & Transceiver & 0110 \\
+        WideBus & Test        & 0111 \\
+        \bottomrule
+    \end{tabular}
+    \caption{
+        GBTx operation modes (dubbed as ``Transceiver modes''), stolen from
+        LHCb \emph{GBTx manual}.
+    }
+    \label{tab:gbtx-modes}
+\end{figure}
