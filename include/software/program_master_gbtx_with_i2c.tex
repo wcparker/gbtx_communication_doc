@@ -6,9 +6,9 @@ external \itwoc adapter first.
 A Windows 7 computer on the rack is used. The \textbf{GBTX programmer} is
 located at:
 
-\begin{minted}[frame=single]{powershell}
+\begin{lstlisting}
 DT_Rack\GBTx_programmer\GBTxProgrammer.jar
-\end{minted}
+\end{lstlisting}
 
 \begin{figure}[ht]
     \centering
@@ -22,9 +22,9 @@ Launch the programmer, a typical UI is shown in
 Click \textbf{Load GBTX configuration} and load a configuration file, which is
 located at:
 
-\begin{minted}[frame=single]{powershell}
+\begin{lstlisting}
 DT_Rack\GBTx_programmer\GBTx_TRx_v12_test_withWatchDog.txt
-\end{minted}
+\end{lstlisting}
 
 Then click \textbf{Write ALL to the GBTX}. Check the returned message to make
 sure everything works (supposedly).
@@ -32,6 +32,6 @@ Now click \textbf{Read state}.
 If the master GBTx is configured correctly and is connected to a working
 MiniDAQ, the return value should be:
 
-\begin{minted}[frame=single]{powershell}
+\begin{lstlisting}
 24 (dec): Idle (normal status when running)
-\end{minted}
+\end{lstlisting}

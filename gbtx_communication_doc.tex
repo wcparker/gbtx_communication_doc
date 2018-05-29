@@ -1,9 +1,11 @@
 \documentclass[11pt,letterpaper]{refart}
 
 \usepackage{gitinfo2}
-\usepackage{hyperref}
 \usepackage{amsmath,mathtools}
+
+\usepackage{hyperref}
 \usepackage{cleveref}
+\usepackage{caption}
 
 \usepackage{microtype}
 \usepackage[T1]{fontenc}
@@ -11,10 +13,16 @@
 \usepackage{graphicx}
 \usepackage{framed}
 \usepackage{tikz}
-\usepackage{caption}
-\usepackage{minted}
 \usepackage{booktabs}
 
+\usepackage{xcolor}
+\usepackage{listings}
+\lstset{
+    basicstyle=\ttfamily\footnotesize,
+    breaklines=true,
+    postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space},
+    frame=single
+}
 
 \def\itwoc{I{$\scriptstyle^2$}C\ }
 \newcommand\symbolwithin[2]{%
