@@ -8,7 +8,8 @@ the slave using the MiniDAQ directly\footnote{
 Follow \autoref{fig:master-sca} to connect a slave GBTx to the SCA channel of a
 master GBTx board.
 
-\begin{center}
+\begin{figure}[!ht]
+\centering
 \begin{tikzpicture}
     % Separation
     \draw [thick,dashed] (0,3) to (0,-3);
@@ -65,9 +66,9 @@ master GBTx board.
     \draw [blue,fill] (2.25,-2.25) circle [radius=0.1];
     \draw [thick,blue,out=-100,in=220] (-2.25,0.75) to (2.25,-2.25);
 \end{tikzpicture}
-\captionof{figure}{Schematic for slave to master SCA setup.}
+\caption{Schematic for slave to master SCA setup.}
 \label{fig:master-sca}
-\end{center}
+\end{figure}
 
 \begin{leftbar}
     The black ground cable can be connected to any of the ground pin on the

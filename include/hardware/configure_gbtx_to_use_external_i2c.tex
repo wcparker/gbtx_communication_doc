@@ -3,7 +3,8 @@
 This setup is required to program a GBTx board using an external \itwoc adapter.
 Follow \autoref{fig:external_i2c} to connect an external \itwoc adapter.
 
-\begin{center}
+\begin{figure}[!ht]
+\centering
 \begin{tikzpicture}
     % Pins
     \draw (0,0) rectangle (0.5,0.5);
@@ -32,9 +33,9 @@ Follow \autoref{fig:external_i2c} to connect an external \itwoc adapter.
         to [out=-50,in=170] (5,-2) node [right]
         {To 2x1 connector};
 \end{tikzpicture}
-\captionof{figure}{Schematic for external \itwoc adapter setup.}
+\caption{Schematic for external \itwoc adapter setup.}
 \label{fig:external_i2c}
-\end{center}
+\end{figure}
 
 \begin{leftbar}
     The \itwoc adapter used in our lab is made in-house.

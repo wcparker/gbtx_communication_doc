@@ -3,7 +3,8 @@ Sometimes GBTx boards will not be properly reset by reprogramming. In such case,
 a hard reset is needed.
 Follow the \autoref{fig:gbtx-reset} to reset GBTx boards.
 
-\begin{center}
+\begin{figure}[!ht]
+\centering
 \begin{tikzpicture}
     % Pins
     \draw (0,0) rectangle (1.5,-1);
@@ -21,9 +22,9 @@ Follow the \autoref{fig:gbtx-reset} to reset GBTx boards.
     \draw [black,fill] (0.25,-0.75) circle [radius=0.1];
     \draw [black,fill] (0.25,-0.25) circle [radius=0.1];
 \end{tikzpicture}
-\captionof{figure}{
+\caption{
     Schematic for resetting GBTx boards. A jumper should be used to connect the
     two pins marked above.
 }
 \label{fig:gbtx-reset}
-\end{center}
+\end{figure}

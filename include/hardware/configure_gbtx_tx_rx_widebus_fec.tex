@@ -7,7 +7,8 @@ these related pins are shown in \autoref{fig:gbt-txrx}.
 GBTx operations mode is completely determined by these 4 pins (corresponding to
 4 bits). The 4-bit operation modes are listed in \nameref{appx:4bit}.
 
-\begin{center}
+\begin{figure}[!ht]
+\centering
 \begin{tikzpicture}
     % Pins
     \draw (0,0) rectangle (1,-5);
@@ -45,10 +46,10 @@ GBTx operations mode is completely determined by these 4 pins (corresponding to
     \draw [thick] (-2,-3.25) to (0.25,-3.25);
     \node  at (-2,-3.25) [left] {\small\texttt{TXMODESEL\_3}};
 \end{tikzpicture}
-\captionof{figure}{
+\caption{
     Schematic showing all 4 related configuration pins.
     Note that the right column is a common ground.
     To switch a pin \emph{off}, connect it to a common ground pin.
 }
 \label{fig:gbt-txrx}
-\end{center}
+\end{figure}
